@@ -44,16 +44,21 @@ app.get('/', (req, res) => {
     // });
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        welcomeMessage: 'Welcome to home page',
-        currentYear: new Date().getFullYear()
+        welcomeMessage: 'Welcome to home page'
     });
 });
 
 app.get('/about', (req, res) => {
     // res.send('About Page.');
     res.render('about.hbs',  {
-        pageTitle: 'About Page',
-        currentYear: new Date().getFullYear()
+        pageTitle: 'About Page'
+    });
+});
+
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Project Page',
+        welcomeMessage: 'My Portfolio Page.'
     });
 });
 
