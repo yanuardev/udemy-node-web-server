@@ -41,7 +41,6 @@ app.get('/', (req, res) => {
     //         'Movies'
     //     ]
     // });
-
     res.render('home.hbs', {
         pageTitle: 'Home Page',
         welcomeMessage: 'Welcome to home page',
