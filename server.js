@@ -26,8 +26,8 @@ app.use((req, res, next) => {
     next();
 });
 
-// maintenance
-app.use((req, res, next) => res.render('maintenance.hbs'));
+// // maintenance
+// app.use((req, res, next) => res.render('maintenance.hbs'));
 
 // load public folder
 app.use(express.static(__dirname + '/public'));
